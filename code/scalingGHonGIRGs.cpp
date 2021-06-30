@@ -18,7 +18,7 @@
 
 using namespace std;
 
-vector<pair<int,int>> generatePairs(const EdgeList& graph, int num, int mndeg, int mxdeg, mt19937& gen) {
+vector<pair<int,int>> generatePairs2(const EdgeList& graph, int num, int mndeg, int mxdeg, mt19937& gen) {
     auto deg = degrees(graph);
     vector<int> candidates;
     rep(i,size(deg))
@@ -87,7 +87,7 @@ int main() {
             GoldbergTarjan::PushRelabel algPR(graph);
             BoykovKolmogorov::BKAlgorithm algBK(graph);
 
-            auto pairs = generatePairs(graph, num_pairs, 10, 20, gen);
+            auto pairs = generatePairs2(graph, num_pairs, 10, 20, gen);
 
             // time all dinics
             auto timeAlg = [&](auto& alg, const string& name) {
