@@ -1,0 +1,31 @@
+avg dist refers to the original graph
+rounds include the last round where no flow is found
+flow per round ignores the last round
+percent are relative to the full graph
+
+avg dist    4.199
+avg SDEG    12.499
+avg TDEG    12.421
+avg rounds  4.808
+avg flow/R  2.91
+
+Direction   BI Search Space
+BFS
+  total     57834 (0.26%)
+  last      39 (0.00%)
+  w/o last  73011 (0.33%)
+DFS
+  w/o last  45460 (0.20%)
+MAXFLOW
+  total     451182 (2.03%)
+
+Direction   UNI Search Space
+BFS
+  total     14570606 (65.66%)
+  last      9807296 (44.20%)
+  w/o last  15821475 (71.30%)
+DFS
+  w/o last  10053101 (45.30%)
+MAXFLOW
+  total     108337687 (488.21%)
+
